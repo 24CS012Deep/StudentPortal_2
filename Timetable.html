@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable - Student Portal</title>
+    <link rel="stylesheet" href="stportal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Student Portal</a>
+        <div class="hamburger">
+            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Timetable.html" class="active">Timetable</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="Results.html">Results</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="cta-button"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <header class="page-header"><h1>Class Timetable</h1></header>
+        <section class="card">
+            <h2>Weekly Schedule</h2>
+            <div class="table-container">
+                <table class="content-table">
+                    <thead><tr><th>Day</th><th>9:00 - 10:00</th><th>10:00 - 11:00</th><th>11:00 - 12:00</th><th>1:00 - 2:00</th><th>2:00 - 3:00</th></tr></thead>
+                    <tbody>
+                        <tr><td>Monday</td><td>Math</td><td>OOP</td><td>CN</td><td>HS</td><td>CN-LAB</td></tr>
+                        <tr><td>Tuesday</td><td>Math</td><td>DSA</td><td>OOP</td><td>CN</td><td>AI</td></tr>
+                        <tr><td>Wednesday</td><td>CN</td><td>OOP</td><td>DSA</td><td>English</td><td>DSA-LAB</td></tr>
+                        <tr><td>Thursday</td><td>DSA</td><td>Math</td><td>AI</td><td>OOP-LAB</td><td>OOP-LAB</td></tr>
+                        <tr><td>Friday</td><td>OOP</td><td>CN</td><td>Math</td><td>HS</td><td>AI</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Student Portal. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger'), navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('toggle');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

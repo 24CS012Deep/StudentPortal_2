@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Student Portal</title>
+    <link rel="stylesheet" href="stportal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Student Portal</a>
+        <div class="hamburger">
+            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Profile.html" class="active">Profile</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Timetable.html">Timetable</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="Results.html">Results</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="cta-button"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Student Dashboard</h1>
+        </header>
+
+        <div class="profile-layout">
+        
+            <aside class="profile-sidebar">
+                <div class="profile-card">
+                    <div class="profile-card-main">
+                        <div class="profile-info">
+                            <h3>Name: --</h3>
+                            <p>Student ID: --</p>
+                        </div>
+                        <img src="11539820.png" alt="Student Avatar" class="profile-avatar">
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat">
+                        
+                            <p>CGPA: --</p>
+                        </div>
+                        <div class="stat">
+                           
+                            <p>Attendance: --</p>
+                        </div>
+                        <div class="stat">
+                           
+                            <p>Courses: --</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        
+            <section class="profile-details">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Edit Your Information</h2>
+                        <div class="form-container">
+                            <form>
+                                <div class="form-group"><label for="username">Username</label><input type="text" id="username" name="username" value="Name"></div>
+                                <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" value="Name@example.com"></div>
+                                <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+91-9876543210"></div>
+                                <div class="form-group"><label for="address">Address</label><textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea></div>
+                                <button type="submit" class="form-btn">Save Changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Student Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger'), navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('toggle');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty('--x', e.clientX - rect.left + 'px');
+                card.style.setProperty('--y', e.clientY - rect.top + 'px');
+            });
+        });
+    </script>
+</body>
+</html>

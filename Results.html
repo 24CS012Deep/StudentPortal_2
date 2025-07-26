@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Student Portal</title>
+    <link rel="stylesheet" href="stportal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Student Portal</a>
+        <div class="hamburger">
+            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Timetable.html">Timetable</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="Results.html" class="active">Results</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="cta-button"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <header class="page-header"><h1>Exam Results</h1></header>
+        <section class="card">
+            <h2>Semester 1 Results</h2>
+            <p>Your results are not yet published. Please check back later.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Student Portal. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger'), navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('toggle');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Student Portal</title>
+    <link rel="stylesheet" href="stportal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Student Portal</a>
+        <div class="hamburger">
+            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Timetable.html">Timetable</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="Results.html">Results</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
+            <li class="cta-button"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <header class="page-header"><h1>Contact & Support</h1></header>
+        <section class="card">
+            <div class="contact-layout">
+                <div class="contact-form">
+                    <h2>Submit a Query</h2>
+                    <div class="form-container">
+                        <form action="#" method="post">
+                            <div class="form-group"><label for="fullname">Full Name</label><input type="text" id="fullname" name="fullname" required></div>
+                            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+                            <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" required></div>
+                            <div class="form-group"><label for="message">Describe your query in detail</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                            <button type="submit" class="form-btn">Submit Query</button>
+                        </form>
+                    </div>
+                </div>
+                <aside class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>For immediate assistance, you can reach us through the following channels.</p>
+                    <p><strong>Email:</strong><br>support@university.edu</p>
+                    <p><strong>Phone:</strong><br>+91-98765-43210</p>
+                    <p><strong>Address:</strong><br>CHARUSAT University,Changa</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Student Portal. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger'), navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('toggle');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

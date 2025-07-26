@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Student Portal</title>
+    <link rel="stylesheet" href="stportal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Student Portal</a>
+        <div class="hamburger">
+            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Timetable.html">Timetable</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="Results.html">Results</a></li>
+            <li><a href="Achievements.html" class="active">Achievements</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="cta-button"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>My Achievements</h1>
+        </header>
+
+        <div class="achievements-gallery">
+
+            <div class="achievement-item">
+                <div class="achievement-image-wrapper">
+                    <img src="certificate.jpg" alt="Certificate of Appreciation">
+                </div>
+                <div class="achievement-details">
+                    <h3>Certificate of Appreciation</h3>
+                    <p>Issued by: AWS - Oct 2025</p>
+                </div>
+            </div>
+          
+            <div class="achievement-item">
+                <div class="achievement-image-wrapper">
+                    <img src="image.png" alt="General Certificate">
+                </div>
+                <div class="achievement-details">
+                    <h3>Top Performer Award</h3>
+                    <p>Issued by: University Academics - May 2025</p>
+                </div>
+            </div>
+           
+            <div class="achievement-item">
+                <div class="achievement-image-wrapper">
+                    <img src="image2.png" alt="Best Award Certificate">
+                </div>
+                <div class="achievement-details">
+                    <h3>Best Award in Tech Fest</h3>
+                    <p>Issued by: Tech CCommunity - Mar 2025</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Student Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger'), navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('toggle');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

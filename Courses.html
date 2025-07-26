@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Student Portal</title>
+    <link rel="stylesheet" href="stportal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Student Portal</a>
+        <div class="hamburger">
+            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Courses.html" class="active">Courses</a></li>
+            <li><a href="Timetable.html">Timetable</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="Results.html">Results</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="cta-button"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Enrolled Courses</h1>
+        </header>
+
+        <div class="course-grid">
+            <!-- Course Card 1 -->
+            <div class="course-card">
+                <div class="course-card-header"><h3>Object Oriented Programming</h3></div>
+                <div class="course-card-body">
+                    <p>Master the principles of OOP using JAVA.</p>
+                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
+                <div class="course-card-footer"><a href="#">View Details</a></div>
+            </div>
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <div class="course-card-header"><h3>Data Structures & Algorithms</h3></div>
+                <div class="course-card-body">
+                    <p>Learn fundamental data structures with PYTHON.</p>
+                    <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                </div>
+                <div class="course-card-footer"><a href="#">View Details</a></div>
+            </div>
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <div class="course-card-header"><h3>Computer Networks</h3></div>
+                <div class="course-card-body">
+                    <p>Understand the protocols that power the internet.</p>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="course-card-footer"><a href="#">View Details</a></div>
+            </div>
+            <!-- Course Card 4 -->
+            <div class="course-card">
+                <div class="course-card-header"><h3>Artificial Intelligence</h3></div>
+                <div class="course-card-body">
+                    <p>Explore the fundamentals of modern AI and machine learning.</p>
+                    <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                </div>
+                <div class="course-card-footer"><a href="#">View Details</a></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Student Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger'), navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('toggle');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
